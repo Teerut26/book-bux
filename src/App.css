@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
 *{
     font-family: 'Kanit', sans-serif;
+    color: #276678;
+}
+
+.card-list{
+    transition: all .3s ease-in-out;
+}
+
+.bg-light{
+    background-color: #F6F5F5 !important;
+}
+.bg-root{
+    background-color: #276678 !important;
+
 }
