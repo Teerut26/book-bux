@@ -10,8 +10,9 @@ function Nav() {
           <div className="flex items-center justify-between md:justify-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <div className="flex-shrink-0 text-light text-lg text-primary">
-                  BookBux Shop
+                <div className="flex-shrink-0 text-light text-lg text-primary flex flex-row items-center gap-2">
+                  <i class="fas fa-book text-primary text-lg"></i>
+                  <div className="text-primary">BookBux Shop</div>
                 </div>
               </div>
               <div className="hidden md:block">
@@ -97,25 +98,25 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <div className=" hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
-                    <i class="fas fa-shopping-basket text-gray-300"></i>
-                    <div className="text-gray-300">หมวดหมู่สินค้า</div>
-                  </div>
+                <div className=" hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
+                  <i class="fas fa-shopping-basket text-gray-300"></i>
+                  <div className="text-gray-300">หมวดหมู่สินค้า</div>
+                </div>
 
-                  <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
-                    <i class="fas fa-shopping-cart text-gray-300"></i>
-                    <div className="text-gray-300">ซื้อ Robux</div>
-                  </div>
+                <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
+                  <i class="fas fa-shopping-cart text-gray-300"></i>
+                  <div className="text-gray-300">ซื้อ Robux</div>
+                </div>
 
-                  <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
-                    <i class="fas fa-sign-in-alt text-gray-300"></i>
-                    <div className="text-gray-300">เข้าสู่ระบบ</div>
-                  </div>
+                <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
+                  <i class="fas fa-sign-in-alt text-gray-300"></i>
+                  <div className="text-gray-300">เข้าสู่ระบบ</div>
+                </div>
 
-                  <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
-                    <i class="fas fa-user-plus text-gray-300"></i>
-                    <div className="text-gray-300">สมัครสมาชิก</div>
-                  </div>
+                <div className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex flex-row items-center gap-1">
+                  <i class="fas fa-user-plus text-gray-300"></i>
+                  <div className="text-gray-300">สมัครสมาชิก</div>
+                </div>
               </div>
             </div>
           )}
