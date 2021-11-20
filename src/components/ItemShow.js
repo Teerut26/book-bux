@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const lists = [
   {
@@ -41,11 +42,11 @@ const lists = [
 
 const Item = (props) => {
   return (
-    <div className="max-w-sm rounded-lg border-5 overflow-hidden shadow-lg bg-light card-list">
+    <div className="max-w-sm rounded-lg border-5 overflow-hidden shadow-lg bg-light card-list ">
       <img class="w-full" src={props.cover} alt="Sunset in the mountains" />
       <div className=" flex flex-row items-center px-3">
         <div>
-        <i class="fas fa-dollar-sign text-6xl"></i>
+          <i class="fas fa-dollar-sign text-6xl"></i>
         </div>
         <div className="px-6 py-4 flex flex-col">
           <div className="font-bold text-xl mb-2">{props.title}</div>
@@ -58,7 +59,7 @@ const Item = (props) => {
 
 export default function itemShow() {
   return (
-    <div className="py-4 flex flex-row gap-3 w-full justify-center w-96 flex-wrap lg:px-6">
+    <div className="py-4 flex flex-row gap-3 w-full justify-center w-96 flex-wrap lg:px-6 px-3 animate__animated animate__fadeIn">
       {lists.map((item) => (
         <Item {...item} />
       ))}

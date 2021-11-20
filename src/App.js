@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import "./App.css";
+import 'animate.css';
 import ItemShow from "./components/ItemShow";
 import Navbar from "./components/Navbar";
 
